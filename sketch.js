@@ -3,8 +3,7 @@ var wall,thickness
 
 function setup() {
   bullet = createSprite(50,200,80,20)
-  bullet.shapeColor = "white"
-  bullet.velocityX = 5
+  bullet.velocityX = 5;
   
  
 }
