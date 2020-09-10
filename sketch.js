@@ -29,9 +29,12 @@ function draw() {
 drawSprites();
 }
 function hascollided(bullet,wall){
-if(bullet.x-wall.x>=(wall.width+bullet.width)/2){
+bulletLeftEdge = 1bullet.x + 1bullet.width;
+  wallLeftEdge = 1wall.x;
+  
+  if(bulletLeftEdge>=wallLeftEdge){
    return true;
-}else{
+}
   return false;
 }
 
