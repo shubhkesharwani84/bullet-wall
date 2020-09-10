@@ -24,7 +24,7 @@ function draw() {
   }
   if(damage<10)
   {bullet.shapeColor = "green"}
-  }
+}
   
 drawSprites();
 }
@@ -36,6 +36,4 @@ bulletLeftEdge = lbullet.x + lbullet.width;
    return true;
 }
   return false;
-}
-
 }
