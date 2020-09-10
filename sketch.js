@@ -29,7 +29,7 @@ function draw() {
 drawSprites();
 }
 function hascollided(bullet,wall){
-if(bullet.x-wall.x>===(wall.width+bullet.width)/2){
+if(bullet.x-wall.x>=(wall.width+bullet.width)/2){
    return true;
 }else{
   return false;
