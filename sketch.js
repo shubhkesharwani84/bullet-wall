@@ -29,10 +29,7 @@ function draw() {
 drawSprites();
 }
 function hascollided(bullet,wall){
-var bulletRightEdge = bullet.x = bullet.width;
-var wallLeftEdge = wall.x
-
-if(bulletRightEdge>=wallLeftEdge){
+if(bullet.x-wall.x>===(wall.width+bullet.width)/2){
    return true;
 }else{
   return false;
