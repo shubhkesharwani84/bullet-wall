@@ -14,7 +14,7 @@ function setup() {
 
 function draw() {
   background(0,255,255);  
- 
+ hascollide(bullet,wall);
   
 drawSprites();
 }
