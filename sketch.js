@@ -19,16 +19,16 @@ function draw() {
   function draw() {
   background(0,255,255);  
   
-  if(hascollided(bullet,wall)){
-    bullet.velocityX =0;
-  var damage =0.5*weight *speed * speed/(thickness*thickness*thickness);
+//   if(hascollided(bullet,wall)){
+//     bullet.velocityX =0;
+//   var damage =0.5*weight *speed * speed/(thickness*thickness*thickness);
   
-  if(damage>10){
-    bullet.shapeColor = "red"
-  }
-  if(damage<10)
-  {bullet.shapeColor = "green"}
-  }
+//   if(damage>10){
+//     bullet.shapeColor = "red"
+//   }
+//   if(damage<10)
+//   {bullet.shapeColor = "green"}
+//   }
   
   console.log(bullet.velocityX)
   drawSprites();
