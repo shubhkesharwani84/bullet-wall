@@ -12,34 +12,31 @@ function setup() {
   wall.shapeColor = color(80,80,80)
  }
 
-function draw() {
-  background(0,255,255);  
- hascollide(bullet,wall);
   
   function draw() {
   background(0,255,255);  
   
-//   if(hascollided(bullet,wall)){
-//     bullet.velocityX =0;
-//   var damage =0.5*weight *speed * speed/(thickness*thickness*thickness);
+  if(hascollided(bullet,wall)){
+    bullet.velocityX =0;
+  var damage =0.5*weight *speed * speed/(thickness*thickness*thickness);
   
-//   if(damage>10){
-//     bullet.shapeColor = "red"
-//   }
-//   if(damage<10)
-//   {bullet.shapeColor = "green"}
-//   }
+  if(damage>10){
+    bullet.shapeColor = "red"
+  }
+  if(damage<10)
+  {bullet.shapeColor = "green"}
+  }
   
   console.log(bullet.velocityX)
   drawSprites();
 }
  
-// function hascollided(bullet,wall){
-// bulletLeftEdge = lbullet.x + lbullet.width;
-//   wallLeftEdge = lwall.x;
+function hascollided(bullet,wall){
+bulletLeftEdge = lbullet.x + lbullet.width;
+  wallLeftEdge = lwall.x;
   
-//   if(bulletLeftEdge>=wallLeftEdge){
-//    return true;
-// }
-//   return false;
-// }
+  if(bulletLeftEdge>=wallLeftEdge){
+   return true;
+}
+  return false;
+}
