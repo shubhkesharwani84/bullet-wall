@@ -34,12 +34,12 @@ function draw() {
   drawSprites();
 }
  
-function hascollided(bullet,wall){
-bulletLeftEdge = lbullet.x + lbullet.width;
-  wallLeftEdge = lwall.x;
+// function hascollided(bullet,wall){
+// bulletLeftEdge = lbullet.x + lbullet.width;
+//   wallLeftEdge = lwall.x;
   
-  if(bulletLeftEdge>=wallLeftEdge){
-   return true;
-}
-  return false;
-}
+//   if(bulletLeftEdge>=wallLeftEdge){
+//    return true;
+// }
+//   return false;
+// }
