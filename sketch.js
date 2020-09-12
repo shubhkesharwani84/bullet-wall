@@ -32,8 +32,8 @@ function setup() {
 }
  
 function hascollided(bullet,wall){
-bulletLeftEdge = lbullet.x + lbullet.width;
-  wallLeftEdge = lwall.x;
+var bulletLeftEdge = bullet.x + bullet.width;
+ var wallLeftEdge = wall.x;
   
   if(bulletLeftEdge>=wallLeftEdge){
    return true;
